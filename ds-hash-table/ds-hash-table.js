@@ -10,6 +10,9 @@ var makeHashTable = function() {
 
       insert: function(key, value) {
         //your code is here
+        // I need to push  Obj.s which each of them has (key,value) to store them in the storage array 
+        var obj = {'key' : value}
+        this._storage.push(obj)
         this._storage[hashFn(key, max)] = value;
     }
   }
